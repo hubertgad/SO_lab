@@ -1,4 +1,4 @@
-// 20.
+// 20. Dodać zadanie do harmonogramu zadań, polegające na uruchomieniu programu defragmentator dysku w wybranym dniu o wybranej godzinie
 net start "task scheduler"
 schtasks /create /tr defrag /sc ONCE /st %time /sd %date 
 
@@ -66,12 +66,43 @@ IF %x% EQU %y% DO (
 // • argumenty oraz operator mają zostać podane z klawiatury poprzez dialog ze skryptem,
 // • kalkulator powinien kontrolować operację dzielenia przez zero.
 
-
+@echo off
+  :start
+echo Wybierz dzialanie:
+echo 1 - Dodawanie
+echo 2 - Odejmowanie
+echo 3 - Mnozenie
+echo 4 - Dzielenie
+set /P wybor=Wybor: 
+set /P x1=Pierwsza liczba:
+set /P x2=Druga liczba:
+IF %wybor% EQU 1 (GOTO :A)
+IF %wybor% EQU 2 (GOTO :B)
+IF %wybor% EQU 3 (GOTO :C)
+IF %wybor% EQU 4 (GOTO :D)
+  :A
+set /A odp=x1+x2
+echo          %x1% + %x2% = %odp%
+GOTO :start
+  :B
+set /A odp=x1+x2
+echo          %x1% - %x2% = %odp%
+GOTO :start
+  :C
+set /A odp=x1+x2
+echo          %x1% * %x2% = %odp%
+GOTO :start
+  :D
+IF %x2% EQU 0 (
+echo Blad! Dzielenie przez 0!
+GOTO :start )
+set /A odp=x1+x2
+echo          %x1% / %x2% = %odp%
+GOTO :start
 
 // 31. Zmodyfikować skrypt z zadania 30 tak, aby wszystkie potrzebne argumenty były podawane jako parametry wejściowe do skryptu.
 
 
 
 // 32. Napisać skrypt, który będzie podawał status wyjścia aplikacji uruchomionej przez skrypt. Skrypt ma zapytać się użytkownika o nazwę aplikacji, którą ma uruchomić.
-
 
