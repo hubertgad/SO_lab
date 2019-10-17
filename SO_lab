@@ -15,13 +15,17 @@ RENAME *.txt *tx_
 RENAME *.%1 *.%2
 
 // 23. Wyświetlić na ekranie listę otwartych udostępnionych plików oraz ich blokady.
+@echo off
+openfiles /query
 
+// 24. Wyświetlić listę połączeń sieciowych komputera.
+netstat
 
+// 25. Uruchomić program notatnik z priorytetem czasu rzeczywistego.
+start /realtime notepad
 
-24. Wyświetlić listę połączeń sieciowych komputera.
-25. Uruchomić program notatnik z priorytetem czasu rzeczywistego.
-26. Napisać polecenie, które wyświetli aktualne ustawienia rozruchu systemu operacyjnego zapisane
-w pliku boot.ini.
+// 26. Napisać polecenie, które wyświetli aktualne ustawienia rozruchu systemu operacyjnego zapisane w pliku boot.ini.
+
 27. Przeanalizować potrzebę wykonania defragmentacji dysku twardego.
 28. Zaplanować automatyczne wyłączenie oraz ponowne uruchomienie komputera.
 29. Napisać grę zgadywankę, o następującym działaniu:
