@@ -68,12 +68,16 @@ IF %x% EQU %y% DO (
 
 @echo off
   :start
+pause
+cls
 echo Wybierz dzialanie:
 echo 1 - Dodawanie
 echo 2 - Odejmowanie
 echo 3 - Mnozenie
 echo 4 - Dzielenie
+echo 5 - Wyjscie
 set /P wybor=Wybor: 
+IF %wybor% EQU 5 (GOTO :E)
 set /P x1=Pierwsza liczba:
 set /P x2=Druga liczba:
 IF %wybor% EQU 1 (GOTO :A)
@@ -99,6 +103,9 @@ GOTO :start )
 set /A odp=x1+x2
 echo          %x1% / %x2% = %odp%
 GOTO :start
+  :E
+echo Koniec...
+pause
 
 // 31. Zmodyfikować skrypt z zadania 30 tak, aby wszystkie potrzebne argumenty były podawane jako parametry wejściowe do skryptu.
 
