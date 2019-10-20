@@ -1,12 +1,12 @@
 @echo off
-REM // 30. Napisaæ skrypt kalkulator o nastêpuj¹cym dzia³aniu:
-REM // • kalkulator wykonuje dzia³ania na liczbach ca³kowitych,
-REM // • kalkulator obs³uguje operacje: +, -, /, *,
-REM // • argumenty oraz operator maj¹ zostaæ podane z klawiatury poprzez dialog ze skryptem,
-REM // • kalkulator powinien kontrolowaæ operacjê dzielenia przez zero.
+REM // 30. NapisaÄ‡ skrypt kalkulator o nastÄ™pujÄ…cym dziaÅ‚aniu:
+REM // â€¢ kalkulator wykonuje dziaÅ‚ania na liczbach caÅ‚kowitych,
+REM // â€¢ kalkulator obsÅ‚uguje operacje: +, -, /, *,
+REM // â€¢ argumenty oraz operator majÄ… zostaÄ‡ podane z klawiatury poprzez dialog ze skryptem,
+REM // â€¢ kalkulator powinien kontrolowaÄ‡ operacjÄ™ dzielenia przez zero.
 
 set /A odp=%1%2%3
-IF "%2%=="/" && 
+REM IF "%2%=="/" && ...............................
 echo ---
 echo 		%1 %2 %3 = %odp%
 echo ---
