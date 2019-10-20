@@ -5,8 +5,11 @@ REM // • kalkulator obsługuje operacje: +, -, /, *,
 REM // • argumenty oraz operator mają zostać podane z klawiatury poprzez dialog ze skryptem,
 REM // • kalkulator powinien kontrolować operację dzielenia przez zero.
 
+
+IF "%2"=="/" (
+	IF "%3"=="0" GOTO :0ERROR
+	)
 set /A odp=%1%2%3
-REM IF "%2%=="/" && ...............................
 echo ---
 echo 		%1 %2 %3 = %odp%
 echo ---
