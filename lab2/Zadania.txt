@@ -1,5 +1,4 @@
 Zarządzanie systemem Windows 10 z poziomu wiersza polecenia
-1. Sprawdź w linii poleceń istniejące konta i grupy użytkowników? Użyj polecenia z grupy net.
 2. Utwórz następujące konta użytkowników przynależące do różnych grup:
 • Student1 – Użytkownicy zaawansowani,
 • Student2 – Użytkownicy,
