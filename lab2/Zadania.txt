@@ -1,0 +1,124 @@
+Zarządzanie systemem Windows 10 z poziomu wiersza polecenia
+1. Sprawdź w linii poleceń istniejące konta i grupy użytkowników? Użyj polecenia z grupy net.
+2. Utwórz następujące konta użytkowników przynależące do różnych grup:
+• Student1 – Użytkownicy zaawansowani,
+• Student2 – Użytkownicy,
+• Student3 – Goście,
+• Student4 – Administratorzy,
+• Student5 – Studenci.
+3. Usuń założone grupy i użytkowników z linii poleceń. Sprawdź czy operacje usunięcia się powiodły.
+4. Jakim poleceniem z linii komend można otworzyć program Zarządzanie komputerem?
+5. Z linii poleceń otwórz program Zasady zabezpieczeń lokalnych:
+(a) Przejdź do folderu Ustawienia zabezpieczeń\Zasady konta\Zasady haseł
+(b) Przejrzyj wszystkie opcje i zapoznaj się z kartą Wyjaśnienie.
+(c) Włączyć opcje dotyczące komplikacji hasła, długość min 8 znaków oraz ważność hasła
+ustawić na 14 dni. Sprawdzić czy można podać hasło nie spełniające powyższych wymagań.
+6. Otwórz ponownie program Zasady zabezpieczeń lokalnych:
+(a) Przejdź do folderu Ustawienia zabezpieczeń\Zasady konta\Zasady blokady konta
+(b) Przejrzyj wszystkie opcje i zapoznaj się z kartą Wyjaśnienie.
+(c) Włączyć opcje blokady konta tak, aby było blokowane na jedną minutę po wprowadzeniu
+trzech błędnych haseł. Dokonać sprawdzenia włączonych mechanizmów.
+7. Jako administrator utwórz konto o nazwie Jan i przypisz mu folder macierzysty w następującej
+lokalizacji: C:\Foldery_macierzyste\Jan.
+8. Przejdź do właściwości konta Jan i przetestuj wszystkie możliwe scenariusze ustalania przez
+administratora zasad dotyczących hasła:
+(a) Użytkownik musi zmienić hasło przy następnym logowaniu,
+(b) Użytkownik nie może zmienić hasła,
+(c) Hasło nigdy nie wygasa.
+Sprawdź jak te zasady działają logując sie na konto Jan po każdej zmianie zasady/zasad.
+9. Sprawdź kiedy ostatnio logował się użytkownik Jan na swoje konto? Podaj dokładną datę i godzinę logowania.
+10. Wyświetlić wszystkie informacje na temat użytkownika, którego nazwę należy podać jako parametr wejściowy do skryptu.
+11. Napisać polecenie, które spowoduje dodanie do systemu użytkownika o podanej nazwie, który
+będzie mógł się zalogować jedynie w dni robocze, w godzinach od 8 do 15.
+1
+12. Napisać polecenie które ustawi minimalną długość hasła na 10 znaków.
+13. Napisać polecenie, które ustawi ważność hasła na 5 dni. Po upływie 5 dni wymuszona zostanie
+zmiana hasła.
+14. Napisać skrypt, który pobierze listę użytkowników z pliku tekstowego, a następnie utworzy dla
+nich konta. Nazwa pliku ma zostać podana jako parametr wejściowy do skryptu. W przypadku
+braku parametru wejściowego skrypt powinien wyświetlić odpowiedni komunikat. Skrypt ma
+także sprawdzać czy plik, którego nazwę podano jako parametr wejśćiowy istnieje w podanej
+lokalizacji. Zawartość pliku z danymi powinna wyglądać następująco:
+1,Jan Kowalski,kowalj
+2,Jozef Nowak,nowakj
+.
+.
+.
+10,Funky Koval,funky
+11,Brenda,brenda
+Jako separatora pól zastosować przecinek.
+15. Prawa dostępu do zasobów. Wykonaj działania:
+(a) Utworzyć trzech użytkowników o nazwach Student1, Student2, Student3.
+(b) Utworzyć dwie grupy o nazwach Grupa1 i Grupa2.
+(c) Do grupy Grupa1 przypisać użytkowników Student1 i Student2.
+(d) Do grupy Grupa2 przypisać użytkowników Student2 i Student3.
+(e) Utworzyć na dysku folder o nazwie C:\dane_grup.
+(f) Zapoznaj się z poleceniem icacls.
+(g) Z poziomu linii poleceń odczytaj właściwości folderu C:\dane_grup.
+(h) Przypisać uprawnienia domyślne wraz z prawem Zapis do folderu Dane_grup grupie
+Grupa1.
+(i) Przypisać grupie Grupa2 prawa Wyświetlanie zawartości folderu oraz Odczyt i odmówić prawa Zapis1
+.
+(j) Sprawdzić jakie są czynne uprawnienia poszczególnych użytkowników? Zwróć szczególną
+uwagę na użytkownika Student2 jakie będzie miał uprawnienia. Wypisz je.
+16. Napisać skrypt, który nada określone prawa dostępu danemu użytkownikowi do danego zasobu.
+Wszystkie potrzebne dane powinny być podane jako parametry skryptu.
+17. Zalogować się jako administrator. Utworzyć folder C:\dane_admina. Nadaj użytkownikowi admin
+prawo Pełna kontrola do tego folderu i utworzyć wewnątrz niego plik plik_admina.txt o
+dowolnej treści.
+18. Zalogować się odpowiednio jako Student1, Student2 oraz Student3 i wykonać na pliku
+plik_admina.txt operacje: otwarcia, zmiany zawartości, zapisu, usunięcia. Wykonanie których
+operacji jest możliwe?
+19. Za poznaj się z poleceniem takeown.
+20. Zapoznać się z programem diskpart. Za jego pomocą wyświetlić
+(a) szczegółowe informacje o dostępnych dyskach, wolumenach i partycjach
+(b) nazwy partycji oraz ich rozmiary
+21. Zapoznać się z poleceniem fsutil.
+1Zwrócić uwagę na właściwą kolumnę.
+2
+22. Wpisać w linii poleceń następujące polecenie: fsutil fsinfo volumeinfo C: i sprawdzić czy
+dysk obsługuje przydziały dyskowe.
+23. Sprawdzić jakie są obecnie ustawione limity przydziałów: fsutil quota query C:. Następnie
+ustawić użytkownikowi Student1 limity na 60 MB (poziom ostrzeżeń, w bajtach: 62914560 = 60·
+2
+20) i 100 MB (limit końcowy, w bajtach: 104857600 = 100·2
+20). Ponownie sprawdzić ustawienia
+linitu przydziałów. Następnie zmienić limity na 80 MB (83886080 B, poziom ostrzeżeń) i 120
+MB (125829120 B, limit końcowy),
+24. Zaloguj się na konto Student1. Uruchom notatnik i napisz w nim dowolny tekst bez zapisywania
+go. Notatnik pozostaw uruchomiony.
+• Podaj jaki masz SID2
+.
+• Przeloguj się na konto administratora (bez wylogowywania).
+25. Zapoznaj się z poleceniem query, a w szczególności z user i session.
+(a) Sprawdź ilu obecnie użytkowników jest zalogowanych w systemie?
+(b) Sprawdź jaki numer identyfikacyjny (ID) ma sesja administratora i użytkownika Student1,
+godzinę logowania, nazwę sesji oraz stan.
+(c) Porównaj wyniki z tym co prezentuje Menedżer zadań w trybie graficznym. Podaj także
+jakim poleceniem można uruchomić Menedżera zadań?
+26. Zapoznaj sie z poleceniem query process oraz uruchom notatnik.
+(a) Wyświetl osobno procesy dla administratora i użytkownika Student1.
+(b) Wyświetl procesy, które są obecnie używane w sesji o nazwie console.
+(c) Wyświetl procesy, które są skojarzone z notatnikiem. Zwróć uwagę na PID procesu i z jakim
+użytkownikiem i sesją są skojarzone.
+(d) Zadanie domowe: wyjaśnij pojęcie PID.
+(e) Porównaj wyniki z tym co prezentuje Menedżer zadań w trybie graficznym.
+27. Zapoznaj się z poleceniem tasklist. Wykonaj podpunkty (a)-(c) z zadania 26. Wskaż, czy są
+różnice w wynikach, czy jest ich tyle samo, jak są wyświetlane? Porównaj wyniki z uzyskanymi
+w poprzednich zadaniach.
+28. Jako administrator z poziomu Menedżera zadań zakończ pracę notatnika.
+29. Będąc zalogowanym na koncie administratora i korzystając z polecenia query, tasklist, tskill
+lub taskkill zakończ działanie notatnika dla konta Student1 (zwróć uwagę, że notatnik pozostał uruchomiony z niezapisanym tekstem).
+30. Korzystając z programu Podgląd zdarzeń określ przybliżony czas ostatniego uruchomienia komputera.
+31. Zapoznaj się z poleceniem systeminfo i porównaj czasy uruchomienia komputera.
+32. Dokonaj inspekcji zdarzeń logowania na kontach. Do dziennika bezpieczeństwa należy zapisywać
+zdarzenia Sukces jak i Niepowodzenie. Wskazówka: użyj polecenia secpol.msc.
+33. Otwórz plik zawierający dziennik bezpieczeństwa i określ informacje dotyczące pierwszego zdarzenia.
+34. ZApoznaj się z poleceniem gpresult.
+35. Wyświetl raport zawierający zasady wynikowe dla użytkownika Student1.
+2
+https://msdn.microsoft.com/en-us/library/windows/desktop/aa379649(v=vs.85).aspx,
+http://technet.microsoft.com/en-us/library/cc778824(WS.10).aspx
+3
+36. Wyświetl raport zawierający zasady wynikowe dla komputera.
+37. Wygeneruj raport w postaci pliku c:\raport\student1.html
