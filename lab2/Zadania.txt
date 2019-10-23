@@ -1,10 +1,6 @@
 Zarządzanie systemem Windows 10 z poziomu wiersza polecenia
-2. Utwórz następujące konta użytkowników przynależące do różnych grup:
-• Student1 – Użytkownicy zaawansowani,
-• Student2 – Użytkownicy,
-• Student3 – Goście,
-• Student4 – Administratorzy,
-• Student5 – Studenci.
+
+
 3. Usuń założone grupy i użytkowników z linii poleceń. Sprawdź czy operacje usunięcia się powiodły.
 4. Jakim poleceniem z linii komend można otworzyć program Zarządzanie komputerem?
 5. Z linii poleceń otwórz program Zasady zabezpieczeń lokalnych:
