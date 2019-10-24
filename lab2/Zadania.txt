@@ -1,14 +1,5 @@
 Zarządzanie systemem Windows 10 z poziomu wiersza polecenia
 
-
-
-6. Otwórz ponownie program Zasady zabezpieczeń lokalnych:
-(a) Przejdź do folderu Ustawienia zabezpieczeń\Zasady konta\Zasady blokady konta
-(b) Przejrzyj wszystkie opcje i zapoznaj się z kartą Wyjaśnienie.
-(c) Włączyć opcje blokady konta tak, aby było blokowane na jedną minutę po wprowadzeniu
-trzech błędnych haseł. Dokonać sprawdzenia włączonych mechanizmów.
-7. Jako administrator utwórz konto o nazwie Jan i przypisz mu folder macierzysty w następującej
-lokalizacji: C:\Foldery_macierzyste\Jan.
 8. Przejdź do właściwości konta Jan i przetestuj wszystkie możliwe scenariusze ustalania przez
 administratora zasad dotyczących hasła:
 (a) Użytkownik musi zmienić hasło przy następnym logowaniu,
