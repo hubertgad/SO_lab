@@ -2,11 +2,6 @@ Zarządzanie systemem Windows 10 z poziomu wiersza polecenia
 
 
 
-5. Z linii poleceń otwórz program Zasady zabezpieczeń lokalnych:
-(a) Przejdź do folderu Ustawienia zabezpieczeń\Zasady konta\Zasady haseł
-(b) Przejrzyj wszystkie opcje i zapoznaj się z kartą Wyjaśnienie.
-(c) Włączyć opcje dotyczące komplikacji hasła, długość min 8 znaków oraz ważność hasła
-ustawić na 14 dni. Sprawdzić czy można podać hasło nie spełniające powyższych wymagań.
 6. Otwórz ponownie program Zasady zabezpieczeń lokalnych:
 (a) Przejdź do folderu Ustawienia zabezpieczeń\Zasady konta\Zasady blokady konta
 (b) Przejrzyj wszystkie opcje i zapoznaj się z kartą Wyjaśnienie.
