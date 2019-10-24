@@ -1,8 +1,7 @@
 Zarządzanie systemem Windows 10 z poziomu wiersza polecenia
 
 
-3. Usuń założone grupy i użytkowników z linii poleceń. Sprawdź czy operacje usunięcia się powiodły.
-4. Jakim poleceniem z linii komend można otworzyć program Zarządzanie komputerem?
+
 5. Z linii poleceń otwórz program Zasady zabezpieczeń lokalnych:
 (a) Przejdź do folderu Ustawienia zabezpieczeń\Zasady konta\Zasady haseł
 (b) Przejrzyj wszystkie opcje i zapoznaj się z kartą Wyjaśnienie.
