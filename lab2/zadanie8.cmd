@@ -8,3 +8,4 @@ REM https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-se
 
 net user Jan /logonpasswordchg:yes
 net user Jan /passwordchg:no
+REM wmic useraccount name="Jan" set passwordexpires=false
