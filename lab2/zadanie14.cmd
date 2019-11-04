@@ -20,5 +20,5 @@ IF NOT EXIST %1.txt (
 ECHO Nie znaleziono pliku...
 GOTO :EOF )
 FOR /F "delims=, tokens=2-3" %%G in (%1.txt) DO (
-NET USET "%%G" /ADD )
+NET USER "%%G" /ADD )
 pause
