@@ -3,3 +3,4 @@ REM 18. Zalogować się odpowiednio jako Student1, Student2 oraz Student3 i wyko
 REM otwarcia, zmiany zawartości, zapisu, usunięcia. 
 REM Wykonanie których operacji jest możliwe?
 
+REM wszystkie ??
