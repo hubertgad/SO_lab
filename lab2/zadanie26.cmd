@@ -8,7 +8,7 @@ REM (e) Porównaj wyniki z tym co prezentuje Menedżer zadań w trybie graficzny
 
 @echo off
 REM 27. Zapoznaj się z poleceniem tasklist. Wykonaj podpunkty (a)-(c) z zadania 26. 
-REM  Wskaż, czy są różnice w wynikach, czy jest ich tyle samo, jak są wyświetlane? 
+REM Wskaż, czy są różnice w wynikach, czy jest ich tyle samo, jak są wyświetlane? 
 REM Porównaj wyniki z uzyskanymi w poprzednich zadaniach.
 
 @echo off
@@ -16,7 +16,7 @@ REM 28. Jako administrator z poziomu Menedżera zadań zakończ pracę notatnika
 
 @echo off
 REM 29. Będąc zalogowanym na koncie administratora i korzystając z polecenia query, tasklist, tskill
-REM  lub taskkill zakończ działanie notatnika dla konta Student1 (zwróć uwagę, że notatnik pozostał uruchomiony z niezapisanym tekstem).
+REM lub taskkill zakończ działanie notatnika dla konta Student1 (zwróć uwagę, że notatnik pozostał uruchomiony z niezapisanym tekstem).
 
 @echo off
 REM 30. Korzystając z programu Podgląd zdarzeń określ przybliżony czas ostatniego uruchomienia komputera.
