@@ -6,6 +6,8 @@ REM %1 - katalog
 REM %2 - nazwa użytkownika 
 REM %3 - uprawnienie
 
-FOR /L %%G IN (3, 1, 9) DO ( IF [%%G] NEQ [] DO (
-ICACLS %1 %2 /grant "%2:%%%G" ) ELSE (
-GOTO :EOF ))
+:LAB1
+IF [%3] NEQ [] (
+ICACLS %1 /grant %2:%3
+SHIFT /3
+GOTO :LAB1)
