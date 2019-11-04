@@ -27,4 +27,4 @@ ICACLS /h
 
 ICACLS C:\dane_grup
 ICACLS C:\dane_grup /grant "Grupa1:W"
-ICACLS C:\dane_grup /grant "Grupa2:(RD)(R)" /deny "Grupa2:W"
+ICACLS C:\dane_grup /grant "Grupa2:(RD,R)" /deny "Grupa2:W"
