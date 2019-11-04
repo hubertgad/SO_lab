@@ -4,4 +4,4 @@ REM Nadaj użytkownikowi admin prawo Pełna kontrola do tego folderu i utworzyć
 
 MKDIR "C:\dane_admina"
 ICACLS "C:\dane_admina" /grant "admin:F"
-echo dowolna_treść > C:\dane_admina\plik_admina.txt
+ECHO dowolna_treść > C:\dane_admina\plik_admina.txt
