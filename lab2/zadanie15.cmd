@@ -25,6 +25,6 @@ MKDIR "C:\dane_grup"
 
 ICACLS /h
 
-ICALS C:\dane_grup
-ICALS C:\dane_grup /grant "Grupa1:W"
-ICALS C:\dane_grup /grant "Grupa2:(RD)(R)" /deny "Grupa2:W"
+ICACLS C:\dane_grup
+ICACLS C:\dane_grup /grant "Grupa1:W"
+ICACLS C:\dane_grup /grant "Grupa2:(RD)(R)" /deny "Grupa2:W"
