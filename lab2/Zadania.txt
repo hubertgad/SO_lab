@@ -1,40 +1,7 @@
 Zarządzanie systemem Windows 10 z poziomu wiersza polecenia
 
 
-10. Wyświetlić wszystkie informacje na temat użytkownika, którego nazwę należy podać jako parametr wejściowy do skryptu.
-11. Napisać polecenie, które spowoduje dodanie do systemu użytkownika o podanej nazwie, który
-będzie mógł się zalogować jedynie w dni robocze, w godzinach od 8 do 15.
-1
-12. Napisać polecenie które ustawi minimalną długość hasła na 10 znaków.
-13. Napisać polecenie, które ustawi ważność hasła na 5 dni. Po upływie 5 dni wymuszona zostanie
-zmiana hasła.
-14. Napisać skrypt, który pobierze listę użytkowników z pliku tekstowego, a następnie utworzy dla
-nich konta. Nazwa pliku ma zostać podana jako parametr wejściowy do skryptu. W przypadku
-braku parametru wejściowego skrypt powinien wyświetlić odpowiedni komunikat. Skrypt ma
-także sprawdzać czy plik, którego nazwę podano jako parametr wejśćiowy istnieje w podanej
-lokalizacji. Zawartość pliku z danymi powinna wyglądać następująco:
-1,Jan Kowalski,kowalj
-2,Jozef Nowak,nowakj
-.
-.
-.
-10,Funky Koval,funky
-11,Brenda,brenda
-Jako separatora pól zastosować przecinek.
-15. Prawa dostępu do zasobów. Wykonaj działania:
-(a) Utworzyć trzech użytkowników o nazwach Student1, Student2, Student3.
-(b) Utworzyć dwie grupy o nazwach Grupa1 i Grupa2.
-(c) Do grupy Grupa1 przypisać użytkowników Student1 i Student2.
-(d) Do grupy Grupa2 przypisać użytkowników Student2 i Student3.
-(e) Utworzyć na dysku folder o nazwie C:\dane_grup.
-(f) Zapoznaj się z poleceniem icacls.
-(g) Z poziomu linii poleceń odczytaj właściwości folderu C:\dane_grup.
-(h) Przypisać uprawnienia domyślne wraz z prawem Zapis do folderu Dane_grup grupie
-Grupa1.
-(i) Przypisać grupie Grupa2 prawa Wyświetlanie zawartości folderu oraz Odczyt i odmówić prawa Zapis1
-.
-(j) Sprawdzić jakie są czynne uprawnienia poszczególnych użytkowników? Zwróć szczególną
-uwagę na użytkownika Student2 jakie będzie miał uprawnienia. Wypisz je.
+
 16. Napisać skrypt, który nada określone prawa dostępu danemu użytkownikowi do danego zasobu.
 Wszystkie potrzebne dane powinny być podane jako parametry skryptu.
 17. Zalogować się jako administrator. Utworzyć folder C:\dane_admina. Nadaj użytkownikowi admin
