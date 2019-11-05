@@ -55,5 +55,5 @@ COPY con > file.txt
 REM 15. Zmienic znak zachety na biezaca godzine zakonczona znakiem wiekszosci.
 PROMPT &T $G
 
-REM 16. Z
-@echo offapoznac sie z poleceniami: if, for, call, goto.
+@echo off
+REM 16. Zapoznac sie z poleceniami: if, for, call, goto.
