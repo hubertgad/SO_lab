@@ -18,13 +18,13 @@ REM 5. Napisz instrukcje, która spowoduje wyswietlenie na ekranie zawartosci pl
 TYPE raport_dysku.txt
 
 REM 6. Napisac instrukcje, która wyswietli wszystkie pliki z katalogu głównego na dysku c.
-DIR /A C:
+DIR /A C: /A-D
 
 REM 7. Napisac instrukcje, która wyswietli wszystkie katalogi w katalogu głównym na dysku c.
-DIR C: /A:D
+DIR /A C: /A:D
 
 REM 8. Wyswietlic wszystkie pliki z katalogu system32 w kolejnosci alfabetycznej według rozszerzenia.
-DIR /A %systemroot%\system32 O:E
+DIR /A %systemroot%\system32 /O:E
 
 REM 9. Napisac polecenie, które skopiuje wszystkie pliki z katalogu nadrzednego wzgledem biezacego do katalogu biezacego. Kopiowanie powinno odbyc sie z weryfikacja danych.
 COPY .. /V
@@ -50,7 +50,7 @@ REM UWAGA! Wykorzystac polecenie copy. Koniec wpisywania znaków do pliku zasygn
 COPY con > file.txt
 
 REM 15. Zmienic znak zachety na biezaca godzine zakonczona znakiem wiekszosci.
-PROMPT &T $G
+PROMPT $T $G
 
 REM 16. Zapoznac sie z poleceniami: if, for, call, goto.
 
