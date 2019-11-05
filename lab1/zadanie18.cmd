@@ -10,5 +10,4 @@ GOTO :EOF )
 IF [%2] NEQ [] (
 DEL %1\*.%2
 SHIFT
-GOTO :LAB
-)
+GOTO :LAB )
