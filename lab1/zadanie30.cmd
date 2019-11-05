@@ -1,9 +1,9 @@
 @echo off
-REM // 30. Napisać skrypt kalkulator o następującym działaniu:
-REM // • kalkulator wykonuje działania na liczbach całkowitych,
-REM // • kalkulator obsługuje operacje: +, -, /, *,
-REM // • argumenty oraz operator mają zostać podane z klawiatury poprzez dialog ze skryptem,
-REM // • kalkulator powinien kontrolować operację dzielenia przez zero.
+REM 30. Napisać skrypt kalkulator o następującym działaniu:
+REM - kalkulator wykonuje działania na liczbach całkowitych,
+REM - kalkulator obsługuje operacje: +, -, /, *,
+REM - argumenty oraz operator mają zostać podane z klawiatury poprzez dialog ze skryptem,
+REM - kalkulator powinien kontrolować operację dzielenia przez zero.
 
   :start
 pause
