@@ -27,13 +27,3 @@ REM Koniec wpisywania znaków do pliku zasygnalizowac sekwencja ctrl+Z.
 REM 15. Zmienic znak zachety na biezaca godzine zakonczona znakiem wiekszosci.
 
 REM 16. Zapoznac sie z poleceniami: if, for, call, goto.
-
-REM 17. Utworzyc plik wsadowy, który usunie wszystkie pliki o rozszerzeniu .bak i .tmp z katalogu
-REM podanego jako parametr. Skrypt powinien sprawdzac czy podano parametr. 
-REM Jesli go nie podano, to na ekranie powinna zostac wydrukowana poprawna składnia uzycia polecenia.
-
-REM 18. Zmodyfikowac skrypt z zadania poprzedniego tak, aby maski plików do usuniecia były podawane z linii polecen. 
-REM Rozwazyc mozliwosc podania wiecej jak jednego parametru.
-
-REM 19. Napisac program wsadowy, który spowoduje wyswietlenie na ekranie nazwy zalogowanego uzytkownika,
-REM litere dysku oraz nazwe katalogu macierzystego oraz informacje o procesorze znajdujacym sie w systemie.
