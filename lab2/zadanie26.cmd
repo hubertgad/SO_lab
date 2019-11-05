@@ -19,12 +19,6 @@ REM 29. Będąc zalogowanym na koncie administratora i korzystając z polecenia 
 REM lub taskkill zakończ działanie notatnika dla konta Student1 (zwróć uwagę, że notatnik pozostał uruchomiony z niezapisanym tekstem).
 
 @echo off
-REM 30. Korzystając z programu Podgląd zdarzeń określ przybliżony czas ostatniego uruchomienia komputera.
-
-@echo off
-REM 31. Zapoznaj się z poleceniem systeminfo i porównaj czasy uruchomienia komputera.
-
-@echo off
 REM 32. Dokonaj inspekcji zdarzeń logowania na kontach. Do dziennika bezpieczeństwa należy zapisywaćzdarzenia Sukces jak i Niepowodzenie.
 REM Wskazówka: użyj polecenia secpol.msc.
 
