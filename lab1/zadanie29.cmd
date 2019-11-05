@@ -1,11 +1,9 @@
 @echo off
-
-REM // 29. Napisać grę zgadywankę, o następującym działaniu:
-REM // • komputer losuje liczbę całkowitą z zakresu od 0 do 100,
-REM // • użytkownik próbuje zgadnąć tę liczbę mając 6 prób,
-REM // • po nieudanej próbie komputer informuje gracza czy podana przez niego liczba była za duża czy za mała,
-REM // • gracz wygrywa gdy uda mu się zgadnąć liczbę.
-
+REM 29. Napisać grę zgadywankę, o następującym działaniu:
+REM - komputer losuje liczbę całkowitą z zakresu od 0 do 100,
+REM - użytkownik próbuje zgadnąć tę liczbę mając 6 prób,
+REM - po nieudanej próbie komputer informuje gracza czy podana przez niego liczba była za duża czy za mała,
+REM - gracz wygrywa gdy uda mu się zgadnąć liczbę.
 
 echo Wylosuje teraz liczbe z zakresu od 1 do 100.
 set /a x = %random% % 100
@@ -24,4 +22,3 @@ IF %x% EQU %y% DO (
   echo ------------------------------------------------------------
   GOTO :label )
  pause
- 
