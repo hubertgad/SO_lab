@@ -86,8 +86,11 @@ schtasks /create /tr defrag /tn nazwa /sc ONCE /st 15:00
 REM 21. Napisać skrypt wypisujący na ekranie liczby całkowite z danego przedziału podanego z lini poleceń.
 FOR /L %%G IN (%1, 1, %2) DO (echo %G)
 
-REM 22. Napisać skrypt który zamieni rozszerzenia wszystkich plików *.txt na *.tx_. Rozszerzyć funkcjonalność skryptu o podawanie rozszerzeń jako parametry skryptu.
-REM RENAME *.txt *tx_ - wersja pierwsza
+REM 22. Napisać skrypt który zamieni rozszerzenia wszystkich plików *.txt na *.tx_.
+REM Rozszerzyć funkcjonalność skryptu o podawanie rozszerzeń jako parametry skryptu.
+:: wersja pierwsza
+RENAME *.txt *tx_ 
+:: wersja rozszerzona
 RENAME *.%1 *.%2
 
 REM 23. Wyświetlić na ekranie listę otwartych udostępnionych plików oraz ich blokady.
