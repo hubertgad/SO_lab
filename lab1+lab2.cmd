@@ -255,7 +255,7 @@ net user Jan /passwordchg:no
 wmic useraccount WHERE name="Jan" SET passwordexpires=false
 
 REM 9. Sprawdź kiedy ostatnio logował się użytkownik Jan na swoje konto? Podaj dokładną datę i godzinę logowania.
-REM wmic user netlogin WHERE name="Jan" get LastLogon /all
+wmic netlogin get Name,NumberOfLogons,LastLogon
 
 REM 10. Wyświetlić wszystkie informacje na temat użytkownika, którego nazwę należy podać jako parametr wejściowy do skryptu.
 net user %1
