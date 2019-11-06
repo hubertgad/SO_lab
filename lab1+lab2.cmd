@@ -432,15 +432,16 @@ REM 33. Otwórz plik zawierający dziennik bezpieczeństwa i określ informacje 
 :: 
 
 REM 34. Zapoznaj się z poleceniem gpresult.
-::
+:: Wyświetla zasady grup i wynikowy zestaw zasad.
 
 REM 35. Wyświetl raport zawierający zasady wynikowe dla użytkownika Student1.
 REM https://msdn.microsoft.com/en-us/library/windows/desktop/aa379649(v=vs.85).aspx,
 REM http://technet.microsoft.com/en-us/library/cc778824(WS.10).aspx
-:: 
+GPRESULT /USER Student1 /V
 
 REM 36. Wyświetl raport zawierający zasady wynikowe dla komputera.
-::
+GPRESULT /SCOPE COMPUTER /V
 
 REM 37. Wygeneruj raport w postaci pliku c:\raport\student1.html
-::
+MD C:\raport\
+GPRESULT /USER Student1 /H C:\raport\Student1.html
