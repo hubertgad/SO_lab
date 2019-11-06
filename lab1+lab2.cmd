@@ -288,8 +288,7 @@ REM 11,Brenda,brenda
 REM Jako separatora pól zastosować przecinek.
 IF [%1] NEQ [] (
 	IF EXIST %1.txt (
-		FOR /F "delims=, tokens=2-3" %%G in (%1.txt) DO (
-		NET USER "%%G" /ADD ) 
+		FOR /F "delims=, tokens=2-3" %%G in (%1.txt) DO ( NET USER "%%G" /ADD ) 
 	) ELSE ( ECHO Nie znaleziono pliku... )
 ) ELSE ( ECHO Nie znaleziono parametru... )
 
