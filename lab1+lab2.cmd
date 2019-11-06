@@ -24,7 +24,7 @@ REM 7. Napisac instrukcje, która wyswietli wszystkie katalogi w katalogu głów
 DIR /A C: /A:D
 
 REM 8. Wyswietlic wszystkie pliki z katalogu system32 w kolejnosci alfabetycznej według rozszerzenia.
-DIR /A %systemroot%\system32 /O:E
+DIR /A %systemroot%\system32 /A-D /O:E
 
 REM 9. Napisac polecenie, które skopiuje wszystkie pliki z katalogu nadrzednego wzgledem biezacego do katalogu biezacego. Kopiowanie powinno odbyc sie z weryfikacja danych.
 COPY .. /V
