@@ -387,6 +387,9 @@ REM (b) Sprawdź jaki numer identyfikacyjny (ID) ma sesja administratora i użyt
 REM (c) Porównaj wyniki z tym co prezentuje Menedżer zadań w trybie graficznym. 
 REM Podaj także jakim poleceniem można uruchomić Menedżera zadań?
 QUERY user
+:: Admin 	| ID: 1 | SESSIONNAME: console	| STATE: Active
+:: Student1 	| ID: 2 | SESSIONNAME: -	| STATE: Disc
+START TASKMGR
 
 REM 26. Zapoznaj sie z poleceniem query process oraz uruchom notatnik.
 REM (a) Wyświetl osobno procesy dla administratora i użytkownika Student1.
@@ -394,36 +397,51 @@ REM (b) Wyświetl procesy, które są obecnie używane w sesji o nazwie console.
 REM (c) Wyświetl procesy, które są skojarzone z notatnikiem. Zwróć uwagę na PID procesu i z jakim użytkownikiem i sesją są skojarzone.
 REM (d) Zadanie domowe: wyjaśnij pojęcie PID.
 REM (e) Porównaj wyniki z tym co prezentuje Menedżer zadań w trybie graficznym.
+QUERY PROCESS Student1
+QUERY PROCESS console
+QUERY PROCESS notepad.exe
+:: PID jest unikatowym numerem identyfikacyjnym procesu.
+:: Jest wyrażony liczbą całkowitą z określonego przedziału (np. short)
 
 REM 27. Zapoznaj się z poleceniem tasklist. Wykonaj podpunkty (a)-(c) z zadania 26. 
 REM Wskaż, czy są różnice w wynikach, czy jest ich tyle samo, jak są wyświetlane? 
 REM Porównaj wyniki z uzyskanymi w poprzednich zadaniach.
+:: TASKKILL kończy działanie określonego procesu lub procesów.
 
 REM 28. Jako administrator z poziomu Menedżera zadań zakończ pracę notatnika.
+TASKKILL /IM notepad.exe
 
 REM 29. Będąc zalogowanym na koncie administratora i korzystając z polecenia query, tasklist, tskill
 REM lub taskkill zakończ działanie notatnika dla konta Student1 (zwróć uwagę, że notatnik pozostał uruchomiony z niezapisanym tekstem).
+TASKKILL /F /IM notepad.exe
 
 REM 30. Korzystając z programu Podgląd zdarzeń określ przybliżony czas ostatniego uruchomienia komputera.
-eventvwr.msc
+EVENTVWR.msc
 
 REM 31. Zapoznaj się z poleceniem systeminfo i porównaj czasy uruchomienia komputera.
 :: Wyświetla szczegółowe informacje o komputerze oraz OS:
 :: konfiguracja OS, informacje o bezpieczeństwie, ID produktu,
 :: konfiguracja sprzętu (RAM, dysk, sieć).
+SYSTEMINFO
 
-REM 32. Dokonaj inspekcji zdarzeń logowania na kontach. Do dziennika bezpieczeństwa należy zapisywaćzdarzenia Sukces jak i Niepowodzenie.
+REM 32. Dokonaj inspekcji zdarzeń logowania na kontach. 
+REM Do dziennika bezpieczeństwa należy zapisywaćzdarzenia Sukces jak i Niepowodzenie.
 REM Wskazówka: użyj polecenia secpol.msc.
+:: 
 
 REM 33. Otwórz plik zawierający dziennik bezpieczeństwa i określ informacje dotyczące pierwszego zdarzenia.
+:: 
 
 REM 34. Zapoznaj się z poleceniem gpresult.
+::
 
 REM 35. Wyświetl raport zawierający zasady wynikowe dla użytkownika Student1.
 REM https://msdn.microsoft.com/en-us/library/windows/desktop/aa379649(v=vs.85).aspx,
 REM http://technet.microsoft.com/en-us/library/cc778824(WS.10).aspx
+:: 
 
 REM 36. Wyświetl raport zawierający zasady wynikowe dla komputera.
+::
 
 REM 37. Wygeneruj raport w postaci pliku c:\raport\student1.html
-
+::
