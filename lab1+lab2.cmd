@@ -37,7 +37,7 @@ REM 11. Napisac instrukcje, która spowoduje usuniecie pustego katalogu o nazwie
 DEL KAT1 /Q
 
 REM 12. Napisac instrukcje, która spowoduje usuniecie niepustego katalogu o nazwie KAT2.
-DET KAT2 /S
+DEL KAT2 /S
 
 REM 13. Utworzyc plik o nazwie dane.h i nadac mu atrybut ukryty. Sprawdzic poleceniem dir, czy jest widoczny.
 NULL > C:\dane.h
