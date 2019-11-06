@@ -357,14 +357,13 @@ list partition
 
 REM 21. Zapoznać się z poleceniem fsutil.
 REM Zwrócić uwagę na właściwą kolumnę.
-
-REM Performs tasks that are related to file allocation table (FAT) and NTFS file systems, 
-REM such as managing reparse points, managing sparse files, or dismounting a volume. 
-REM If it is used without parameters, Fsutil displays a list of supported subcommands.
+:: Performs tasks that are related to file allocation table (FAT) and NTFS file systems, 
+:: such as managing reparse points, managing sparse files, or dismounting a volume. 
+:: If it is used without parameters, Fsutil displays a list of supported subcommands.
 
 REM 22. Wpisać w linii poleceń następujące polecenie: fsutil fsinfo volumeinfo C: 
 REM i sprawdzić czy dysk obsługuje przydziały dyskowe.
-.............
+:: nie obsługuje
 
 REM 23. Sprawdzić jakie są obecnie ustawione limity przydziałów: fsutil quota query C:.
 REM Następnie ustawić użytkownikowi Student1 limity na 60 MB (poziom ostrzeżeń, w bajtach: 62914560 = 60·220) 
