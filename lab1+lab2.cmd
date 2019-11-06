@@ -286,14 +286,12 @@ REM .
 REM 10,Funky Koval,funky
 REM 11,Brenda,brenda
 REM Jako separatora pól zastosować przecinek.
-IF [%1] EQU [] (
-ECHO Nie znaleziono parametru...
-GOTO :EOF )
-IF NOT EXIST %1.txt (
-ECHO Nie znaleziono pliku...
-GOTO :EOF )
-FOR /F "delims=, tokens=2-3" %%G in (%1.txt) DO (
-NET USER "%%G" /ADD )
+IF [%1] NEQ [] (
+	IF EXIST %1.txt (
+		FOR /F "delims=, tokens=2-3" %%G in (%1.txt) DO (
+		NET USER "%%G" /ADD ) 
+	) ELSE ( ECHO Nie znaleziono pliku... )
+) ELSE ( ECHO Nie znaleziono parametru... )
 
 REM 15. Prawa dostępu do zasobów. Wykonaj działania:
 REM (a) Utworzyć trzech użytkowników o nazwach Student1, Student2, Student3.
