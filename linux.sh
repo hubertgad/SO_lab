@@ -26,5 +26,11 @@ ls -a|more > wynik.dat
 
 # 3. Stworzyć w katalogu katalog miękki link do pliku plik.txt. Sprawdzić w jaki sposób link ten 
 # jest wyświetlany przez polecenie ls oraz dokonać próby modyfikacji tego pliku poprzez stworzony link.
+ln plik.txt linkDoPliku
+# wyświetla się:
+# linkDoPliku -> plik.txt
 
 # 4. Korzystając z polecenia cat stworzyć dwa pliki dane1.dat oraz dane2.dat a nastepnie połączyćoba pliki w jeden pod nazwą dane3.dat.
+cat dane1.dat # <wpisujemy tekst po enterze, następnie ctrl + Z>
+cat dane2.dat # <wpisujemy tekst po enterze, następnie ctrl + Z>
+cat dane1.dat dane2.dat > dane3.dat
