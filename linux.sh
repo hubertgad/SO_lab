@@ -1,7 +1,7 @@
 # ----------------------------------------------------------------------------------------------------
-# || Laboratorium
-# || Linux – praca w konsoli
-# || Manipulowanie plikami i katalogami
+# Laboratorium
+# Linux – praca w konsoli
+# Manipulowanie plikami i katalogami
 # ----------------------------------------------------------------------------------------------------
 
 # 1. Wyświetlić zawartość swojego katalogu domowego tak aby:
@@ -27,4 +27,4 @@ ls -a|more > wynik.dat
 # 3. Stworzyć w katalogu katalog miękki link do pliku plik.txt. Sprawdzić w jaki sposób link ten 
 # jest wyświetlany przez polecenie ls oraz dokonać próby modyfikacji tego pliku poprzez stworzony link.
 
-# 4. Korzystając z poleceniacatstworzyć dwa plik vidane1.dat oraz dane2.dat a nastepnie połączyćoba pliki w jeden pod nazwą dane3.dat.
+# 4. Korzystając z polecenia cat stworzyć dwa pliki dane1.dat oraz dane2.dat a nastepnie połączyćoba pliki w jeden pod nazwą dane3.dat.
